@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-orangeBrand: #FF914D;
+  --color-creamBg: #FFF8F2;
+  --color-brownText: #4E342E;
+  --font-body: Inter, sans-serif;
+  --font-heading: Poppins, sans-serif;
+}
+
+body {
+  background: var(--color-creamBg);
+  color: var(--color-brownText);
+  font-family: var(--font-body);
+}
