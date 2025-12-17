@@ -5,7 +5,7 @@ import Dog from "@/models/Dog";
 export async function GET() {
   try {
     await connectDB();
-    const dogs = await Dog.find(); // fetch all dogs
+    const dogs = await Dog.find(); 
     return NextResponse.json(dogs);
   } catch (error) {
     console.error(error);

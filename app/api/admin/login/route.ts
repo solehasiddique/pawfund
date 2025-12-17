@@ -9,7 +9,7 @@ export async function POST(req: Request) {
   ) {
     const res = NextResponse.json({ success: true });
 
-    // set cookie
+    // cookie
     res.cookies.set("admin_token", "authorized", {
       httpOnly: true,
       sameSite: "strict",

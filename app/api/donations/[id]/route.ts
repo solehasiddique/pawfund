@@ -7,7 +7,7 @@ export async function PATCH(req: NextRequest, context: { params: Promise<{ id: s
     const { id } = await context.params;
     const { status } = await req.json();
 
-    console.log("STATUS UPDATE:", id, status); // 👈 LOG THIS
+    console.log("STATUS UPDATE:", id, status);//log
 
     await connectDB();
     await Donation.findByIdAndUpdate(id, { status });

@@ -122,7 +122,7 @@ export default async function Home() {
 
 
 
-      {/* Featured Dogs Section (Dynamic) */}
+      {/* Featured Dogs Section*/}
       <section className="py-20 px-8 bg-[#FFF7F0] text-center">
         <h2 className="text-3xl font-bold text-[#5C4033] mb-12">
           Meet Our Pawsome Friends 🐶

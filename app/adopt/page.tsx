@@ -72,7 +72,7 @@ export default function AdoptionPage() {
           </div>
         ))}
       </section>
-      {/* 🧾 Adoption Modal (only visible when a dog is selected) */}
+      {/* 🧾 Adoption Modal  */}
       {selectedDog && (
         <AdoptMeModal dog={selectedDog} onClose={() => setSelectedDog(null)} />
       )}

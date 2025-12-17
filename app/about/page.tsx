@@ -39,7 +39,6 @@ export default function AboutPage() {
         </p>
       </section>
 
-      {/* How Funds Are Used */}
       <section className="py-20 px-8 bg-[#FFF2E8] text-center">
         <h2 className="text-3xl font-bold text-[#5C4033] mb-10">How Your Help Works</h2>
 
@@ -75,7 +74,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Creator / Team Section */}
+      {/* Team Section */}
       <section className="py-20 px-8 bg-white text-center">
         <h2 className="text-3xl font-bold text-[#5C4033] mb-8">Meet the Creator</h2>
         <div className="flex flex-col items-center">

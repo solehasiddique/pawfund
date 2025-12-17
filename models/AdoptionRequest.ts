@@ -10,7 +10,7 @@ const AdoptionRequestSchema = new Schema(
   { timestamps: true }
 );
 
-// ✅ Prevent recompiling the model on every reload
+//  Prevent recompiling the model on every reload
 const AdoptionRequest =
   models.AdoptionRequest || mongoose.model("AdoptionRequest", AdoptionRequestSchema);
 
