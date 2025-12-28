@@ -52,6 +52,17 @@ Open in browser:
 http://localhost:3000  
 
 --------------------------------------------------
+## 📸 Screenshots
+
+### Home Page
+![Admin Dashboard](assets/image.png)
+
+### Admin Dashboard
+![Donation Management](assets/image2.png)
+ ## 🎥 Demo
+
+![Donation Flow Demo](assets/pawfund1.gif)
+
 
 ## 🌐 Deployment
 
