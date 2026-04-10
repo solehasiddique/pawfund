@@ -42,12 +42,12 @@ export default async function Home() {
           <p className="text-lg md:text-xl mb-8">
             Join PawFund in helping stray and shelter animals find a forever home.
           </p>
-          <a
+          <Link
             href="/donate"
             className="bg-orangeBrand text-white px-6 py-3 rounded-lg hover:bg-[#FF7A2F] transition"
           >
             Donate Now
-          </a>
+          </Link>
         </div>
       </section>
 

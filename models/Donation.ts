@@ -6,7 +6,7 @@ const DonationSchema = new mongoose.Schema({
   message: String,
   amount: Number,
   date: { type: Date, default: Date.now },
-  status: { type: String, default: "pending" }, // ⬅ NEW FIELD
+  status: { type: String, default: "pending" }, 
 });
 
 export default mongoose.models.Donation ||

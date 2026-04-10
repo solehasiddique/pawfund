@@ -4,6 +4,19 @@ import Razorpay from "razorpay";
 export async function POST(req: Request) {
   try {
     const { amount } = await req.json();
+    if (!amount || amount < 50) {
+    return Response.json(
+      { error: "Minimum donation is ₹50" },
+      { status: 400 }
+    );
+  }
+
+  if (amount > 50000) {
+    return Response.json(
+      { error: "Maximum donation is ₹50,000" },
+      { status: 400 }
+    );
+  }
 
     const instance = new Razorpay({
       key_id: process.env.RAZORPAY_KEY_ID!,
