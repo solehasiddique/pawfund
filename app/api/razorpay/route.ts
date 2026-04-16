@@ -30,8 +30,17 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ orderId: order.id });
-  } catch (error) {
-    console.error(error);
-    return NextResponse.json({ error: "Razorpay order creation failed" }, { status: 500 });
-  }
-}
+  } catch (error: any) {
+  console.error("RAZORPAY BACKEND ERROR:", error);
+
+  return NextResponse.json(
+    {
+      error: error?.message || "Unknown error",
+      envCheck: {
+        keyIdExists: !!process.env.RAZORPAY_KEY_ID,
+        keySecretExists: !!process.env.RAZORPAY_KEY_SECRET,
+      },
+    },
+    { status: 500 }
+  );
+}}
