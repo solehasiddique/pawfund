@@ -30,12 +30,12 @@ export async function POST(req: Request) {
     });
 
     return NextResponse.json({ orderId: order.id });
-  } catch (error: any) {
-  console.error("RAZORPAY BACKEND ERROR:", error);
+  }  catch (error: any) {
+  console.error("FULL RAZORPAY ERROR:", error);
 
   return NextResponse.json(
     {
-      error: error?.message || "Unknown error",
+      rawError: JSON.stringify(error, Object.getOwnPropertyNames(error)),
       envCheck: {
         keyIdExists: !!process.env.RAZORPAY_KEY_ID,
         keySecretExists: !!process.env.RAZORPAY_KEY_SECRET,
