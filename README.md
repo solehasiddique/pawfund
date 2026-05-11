@@ -44,7 +44,9 @@ Clone the repository:
 git clone https://github.com/solehasiddique/pawfund.git
 cd pawfund
 npm install
---------------------------------------------------
+```
+
+---
 
 ## 🔐 Environment Variables
 
@@ -58,7 +60,7 @@ RAZORPAY_KEY_SECRET=your_secret_key
 ADMIN_EMAIL=admin@email.com
 ADMIN_PASSWORD=your_password
 
---------------------------------------------------
+---
 
 ## ▶️ Run the Project
 
@@ -67,36 +69,40 @@ npm run dev
 Open in browser:
 http://localhost:3000
 
---------------------------------------------------
+---
+
 ## 📸 Screenshots
 
 ### Home Page
+
 ![Admin Dashboard](assets/image.png)
 
 ### Admin Dashboard
+
 ![Donation Management](assets/image2.png)
- ## 🎥 Demo
+
+## 🎥 Demo
 
 ![Donation Flow Demo](assets/pawfund1.gif)
-
 
 ## 🌐 Deployment
 
 This project is deployed on Vercel.
 
---------------------------------------------------
- ## 🧠 Challenges Faced
+---
+
+## 🧠 Challenges Faced
 
 While building PawFund, I faced several real-world development challenges including:
-	•	Middleware route protection issues
-	•	Admin authentication bugs
-	•	Environment variable configuration problems
-	•	Razorpay deployment/debugging on Vercel
-	•	Branch deployment confusion during production hosting
+• Middleware route protection issues
+• Admin authentication bugs
+• Environment variable configuration problems
+• Razorpay deployment/debugging on Vercel
+• Branch deployment confusion during production hosting
 
 Solving these issues helped me better understand full-stack deployment and production debugging.
 
---------------------------------------------------
+---
 
 ## 👩‍💻 Developer
 
@@ -104,4 +110,3 @@ Built with ❤️ by Soleha Siddique
 
 📧 Email: solehasiddique07@gmail.com
 🐙 GitHub: https://github.com/solehasiddique
-
