@@ -43,6 +43,7 @@ Clone the repository:
 ```bash
 git clone https://github.com/solehasiddique/pawfund.git
 cd pawfund
+git checkout working-demo
 npm install
 ```
 
